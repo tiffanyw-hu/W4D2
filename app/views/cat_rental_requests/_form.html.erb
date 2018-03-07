@@ -1,0 +1,12 @@
+
+
+<label for="cat_request">Cat Request </label>
+<select name="cat_rental_request[cat_id]">
+  <% if type == :new %>
+  <option disabled selected>---</option>
+  <% end %>
+  <% Cat.all.each do |cat| %>
+    <option value="<%= color %>"><%= request.cat_id %></option>
+  <% end %>
+<% end %>
+</select>
